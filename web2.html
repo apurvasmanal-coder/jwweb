@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIA | Emerald & Gold Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Prata&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fdfbf7; }
+        h1, h2, h3, .serif { font-family: 'Cinzel', serif; }
+        p { font-family: 'Prata', serif; }
+        .bg-emerald-900 { background-color: #064e3b; }
+        .text-gold { color: #c5a059; }
+        .bg-gold { background-color: #c5a059; }
+        .border-gold { border-color: #c5a059; }
+        .hero-overlay { background: linear-gradient(to right, rgba(6, 78, 59, 0.8), rgba(6, 78, 59, 0.2)); }
+    </style>
+</head>
+<body class="text-stone-900">
+
+    <div class="bg-emerald-950 text-gold text-center py-2 text-[10px] tracking-[0.4em] uppercase font-bold border-b border-gold/30">
+        Free Insured Shipping on Orders Over $2,000 • Est. 1924
+    </div>
+
+    <nav class="flex justify-between items-center px-8 py-6 bg-white/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-[0.2em] serif text-emerald-900">AURELIA</div>
+        <div class="hidden md:flex space-x-10 uppercase text-[10px] tracking-[0.2em] font-bold text-stone-600">
+            <a href="#" class="hover:text-gold transition">High Jewelry</a>
+            <a href="#" class="hover:text-gold transition">Bridal</a>
+            <a href="#" class="hover:text-gold transition">Timepieces</a>
+            <a href="#boutique" class="hover:text-gold transition">Boutiques</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="text-xs font-light italic mr-4 hidden sm:block">Find a Store</span>
+            <button class="text-xl">碧</button>
+        </div>
+    </nav>
+
+    <header class="relative h-[70vh] flex items-center overflow-hidden bg-emerald-900">
+        <img src="https://images.unsplash.com/photo-1584302174644-629a84bf191a?auto=format&fit=crop&q=80&w=1600" class="absolute inset-0 w-full h-full object-cover opacity-60" alt="Hero">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-10 text-white">
+            <h1 class="text-5xl md:text-7xl mb-4 leading-tight">The Emerald<br><span class="italic text-gold">Solstice</span></h1>
+            <p class="text-lg mb-8 max-w-md opacity-90">Discover the 2026 collection featuring ethically sourced Zambian emeralds set in 18k recycled gold.</p>
+            <button class="bg-gold text-emerald-950 px-10 py-4 font-bold uppercase text-[10px] tracking-widest hover:bg-white transition duration-500">View Lookbook</button>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto py-24 px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+            <div>
+                <span class="text-gold uppercase tracking-[0.3em] text-[10px] font-bold">Latest Releases</span>
+                <h2 class="text-4xl serif text-emerald-900 mt-2">New Arrivals</h2>
+            </div>
+            <a href="#" class="text-xs border-b border-gold pb-1 uppercase tracking-widest hover:text-gold">Shop All Items</a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="group">
+                <div class="relative overflow-hidden aspect-square bg-stone-100 mb-4">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute top-2 left-2 bg-emerald-900 text-white text-[8px] px-2 py-1 uppercase tracking-tighter">New</div>
+                </div>
+                <h3 class="serif text-sm">Petite Gold Studs</h3>
+                <p class="text-xs text-stone-500 mt-1">$320</p>
+            </div>
+            <div class="group">
+                <div class="relative overflow-hidden aspect-square bg-stone-100 mb-4">
+                    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <h3 class="serif text-sm">Rose Gold Band</h3>
+                <p class="text-xs text-stone-500 mt-1">$850</p>
+            </div>
+            <div class="group">
+                <div class="relative overflow-hidden aspect-square bg-stone-100 mb-4">
+                    <img src="https://images.unsplash.com/photo-1598560917505-59a3ad559071?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <h3 class="serif text-sm">Silk Thread Bracelet</h3>
+                <p class="text-xs text-stone-500 mt-1">$210</p>
+            </div>
+            <div class="group">
+                <div class="relative overflow-hidden aspect-square bg-stone-100 mb-4">
+                    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <h3 class="serif text-sm">Minimalist Pearl</h3>
+                <p class="text-xs text-stone-500 mt-1">$440</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-emerald-950 py-20 px-6">
+        <div class="max-w-6xl mx-auto border border-gold/30 p-1 bg-gold/5">
+            <div class="border border-gold/30 p-10 md:p-20 text-center relative overflow-hidden">
+                <div class="absolute -top-10 -left-10 text-gold/5 text-9xl serif select-none">OFFER</div>
+                
+                <span class="text-gold uppercase tracking-[0.5em] text-xs">Limited Time Exclusive</span>
+                <h2 class="text-4xl md:text-6xl text-white serif my-6">25% Off Engagement Rings</h2>
+                <p class="text-stone-300 max-w-2xl mx-auto mb-10">Use code <span class="text-gold font-bold underline">FOREVER26</span>. Plus, receive a complimentary velvet cleaning kit with every purchase this month.</p>
+                <button class="border-2 border-gold text-gold hover:bg-gold hover:text-emerald-95
